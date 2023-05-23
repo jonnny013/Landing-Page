@@ -12,68 +12,114 @@ body {
 
 .nav {
   position: fixed;
-  background-color: brown;
-  font-size: 2rem;
+  background-color: #1F2937;
+  font-size: 1.8rem;
   padding-right: 20px;
   height: 75px;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
-nav{
-  display: flex;
-  justify-content: flex-end;
+.logo {
+  max-width: 75px;
+  height: auto;
+  padding-left: 30px;
+  justify-content: flex-start;
+}
+
+#navbar {
+display: flex;
   gap: 45px;
   align-items: center;
   height: 100%;
+  justify-content: flex-end;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #E5E7EB;
   margin-right: 20px;
 }
 
 #welcome {
   width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  background-color: black;
-  color: white
+  gap: 50px;
+  height: 600px;
+  background-color: #1F2937;
+  color: #F9FAF8;
 }
 
-#projects {
+.welcome-text {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-text button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #3882F6;
+  border: none;
+}
+
+.welcome-text a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: extra-bold;
+  margin: 0;
+}
+
+.welcome-text p {
+  font-size: 2.4rem;
+}
+
+.selfie {
+  width: 500px;
+  height: auto;
+}
+
+#info {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 400px;
-  background-color: rgb(164, 89, 164);
-  color: white
+  background-color: white;
+  color: black;
 }
 
-.projects {
-  border: 1px solid black;
-  height: 300px;
+.my-photos {
+  display: flex;
+  gap: 50px;
+}
+
+.info {
+  border: 2px solid #3884F6;
+  border-radius: 10px;
+  height: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
   flex-wrap: wrap;
-  width: 400px;
+  width: 200px;
+  overflow: hidden;
+  background-color: black;
 }
 
-.project-title {
-  height: 75px;
-  background-color: blueviolet;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+.photos {
   width: 100%;
 }
 
