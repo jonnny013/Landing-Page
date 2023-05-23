@@ -1,5 +1,5 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: roboto, Helvetica, sans-serif;
   font-size: 10;
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ nav a {
   flex-direction: column;
 }
 
-.welcome-text button {
+button {
   width: 100px;
   height: 30px;
   border-radius: 20px;
@@ -94,7 +94,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: auto;
   background-color: white;
   color: black;
 }
@@ -102,6 +102,12 @@ h1 {
 .my-photos {
   display: flex;
   gap: 50px;
+}
+
+#info h2 {
+  font-size: 3.6rem;
+  font-style: extra-bold;
+  color: #1F2937;
 }
 
 .info {
@@ -119,71 +125,107 @@ h1 {
   background-color: black;
 }
 
+.photo-info {
+  width: 204px;
+  height: 275px;
+}
+
 .photos {
   width: 100%;
 }
 
-.projects a {
-  flex: 1;
-  font-size: 2.3rem;
-  text-decoration: none;
-  color: blue;
-  margin-top: 20px;
+.photo-info p {
+  color: gray;
 }
 
-.projects p {
-  font-size: 1.5rem;
-}
 
-#contact {
+#quote {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  background-color: black;
-  color: white
+  height: auto;
+  background-color: #E5E7EB;
+  color: #1F2937;
+ 
 }
 
-#contact a {
-  color: white;
-  font-size: 3rem;
+blockquote {
+  font-size: 3.6rem;
+  font-style: italic;
+  color: #1F2937;
+  padding: 0;
+  margin: 30px;
 }
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: flex-end;
+}
+
+#bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+
+.blue-box {
+  width: 85%;
+  background-color:#3882F6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.action p, .action h3 {
+  margin: 5px;
+  padding: 10px;
+}
+
+#bottom button {
+  border: 1px solid white;
+}
+
+#bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 footer {
-  background-color: brown;
+  background-color: #1F2937;
   height: 100%;
   margin: 0;
   text-align: center;
   padding: 10px;
+  color: #E5E7EB;
 }
 
-@media screen and (max-width: 600px) {  
-  .projects {
-    height: 200px;
-    font-size: 1rem;
-    width: 300px;
+footer a {
+  text-decoration: none;
+}
+
+footer a:visited {
+  color:#E5E7EB;
+}
+
+@media screen and (max-width: 900px) {  
+  .my-photos {
+    flex-direction: column;
   }
 
-  project-title {
-    height: 75px;
-    background-color: blueviolet;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .projects a {
-    flex: 1;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: blue;
-    margin-top: 20px;
-  }
-  
-  .projects p {
-    font-size: 1rem;
+  #welcome {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 100px;
   }
 }
